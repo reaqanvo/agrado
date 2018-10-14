@@ -1,0 +1,183 @@
+<div class="grid-container" *ngIf="limpiarlo">
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="limpiar()">LIMPIAR</button>
+  </div>
+  <div class="grid-itemM">
+    <div class="gridBox">
+      <div class="gridFecha">
+        <p class="gridP">Fecha:</p> <input type="text" class="gridInput">
+      </div>
+      <div class="gridButtonA">
+        <button type="button" class="gridButton1" (click)="imprimir()">IMPRIMIR</button>
+        <button type="button" class="gridButton1" (click)="INGLES()">INGLÉS</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="modificar()">MODIFICAR</button>
+    <button type="button" class="gridButton" (click)="duplicar()">DUPLICAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="borrar()">BORRAR</button>
+  </div>
+
+</div>
+<div class="grid-container3" *ngIf="limpiarlo">
+  <div class="grid-container2">
+
+    <div class="grid-item">
+      <label for="referencia">REFERENCIA </label>
+      <p class="referencia" ></p>
+    </div>
+    <div class="grid-item">
+      <label for="nPlano">N.PLANO </label>
+      <input  type="text" name="nPlano" id="nPlano">
+
+    </div>
+    <div class="grid-item">
+      <label for="cliente">CLIENTE </label>
+      <p class="referencia" ></p>
+
+    </div>
+    <div class="grid-item">
+      <label for="descripcion">DESCRIPCION </label>
+      <input type="text" name="descripcion" id="descripcion">
+    </div>
+    <div class="grid-item">
+      <label for="tipoVidrio">TIPO DE VIDRIO </label>
+      <p class="referencia"></p>
+    </div>
+    <div class="grid-item">
+      <label for="capacidad">CAPACIDAD </label>
+      <input type="text" name="capacidad" id="capacidad">
+    </div>
+    <div class="grid-item">
+      <label for="unidadcaja">UNID.CAJA</label>
+      <input type="text" name="unidadcaja" id="unidadcaja">
+    </div>
+    <div class="grid-item">
+      <label for="peso">PESO </label>
+      <input type="text" name="peso" id="peso">
+    </div>
+    <div class="grid-item">
+      <label for="desperdicio">DESPERDICIO </label>
+      <input type="text" name="desperdicio" id="desperdicio">
+    </div>
+    <div class="grid-item">
+      <label class="p-grid-item">ORIENTACIÓN TEXTO</label>
+      <select class="select-grid-item">
+        <option></option>
+        <option>HORIZONTAL</option>
+        <option>VERTICAL</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <label class="p-grid-item">REF. MOLDE</label>
+      <select class="select-grid-item">
+        <option></option>
+        <option>1</option>
+        <option>10</option>
+        <option>11</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <label class="p-grid-item">COSTE FABRICACION MILLAR</label>
+      <select class="select-grid-item">
+        <option></option>
+        <option>1</option>
+        <option>10</option>
+        <option>11</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <p class="p-grid-item">PALETIZADO</p>
+      <select class="select-grid-item">
+        <option></option>
+        <option>1</option>
+        <option>10</option>
+        <option>11</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <label for="embalaje">EMBALAJE </label>
+      <input type="text" name="embalaje" id="embalaje">
+    </div>
+    <div class="grid-item">
+      <label for="textoS">TEXTO SERIGRAFIA </label>
+      <input type="text" name="textoS" id="textoS">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">COLOR SERIGRAFIA </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">FECHA INICIO </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="fechaF">FECHA FIN </label>
+      <input type="text" name="fechaF" id="fechaF">
+    </div>
+    <div class="grid-item">
+      <label class="labelCalcular" for="calcular"> </label>
+      <button class="buttCalcular" type="button" name="calcular" id="calcular">CALCULAR</button>
+    </div>
+    <div class="grid-item">
+      <label for="numfabricadas"> NÚM. UNIDADES FABRICADAS</label>
+      <input class="numfabricadas" type="text" name="numfabricadas" id="numfabricadas">
+    </div>
+    <div class="grid-item">
+      <label for="historicoRec"></label>
+      <p class="historicoRec">HISTÓRICO DE RECLAMACIONES</p>
+    </div>
+    <div class="grid-item">
+      <hr>
+    </div>
+    <div class="grid-item">
+      <input type="text" name="numfabricadas" id="numfabricadas">
+    </div>
+    <div class="grid-item">
+      <div class="buttanadir" type="button" name="buttanadir" id="buttanadir">AÑADIR</div>
+    </div>
+  </div>
+
+  <div class="grid-container4">
+    <div class="itemInferior">
+      <p class="historicoRec">REVISIONES</p>
+    </div>
+    <div class="itemInferior">
+      <p class="historicoRec">AUTOR</p>
+    </div>
+    <div class="itemInferior">
+      <p class="historicoRec">FECHA</p>
+    </div>
+    <div class="itemInferior">
+      <input class="revisiones" type="text" name="numfabricadas" id="numfabricadas">
+    </div>
+    <div class="itemInferior">
+      <input class="revisionesGris" type="text" name="numfabricadas" id="numfabricadas" >
+    </div>
+    <div class="itemInferior">
+      <input class="revisionesGris" type="text" name="numfabricadas" id="numfabricadas" >
+    </div>
+    <div class="itemInferior">
+      <div class="buttanadir" type="button" name="buttanadir" id="buttanadir">AÑADIR</div>
+    </div>
+  </div>
+    <div class="itemInferior">
+      <p class="historicoRec">OBSERVACIONES TÉCNICAS DE OFICIALES</p>
+      <div class="observTecnicasOfic">
+        <p class="menudebajo">FECHA</p>
+        <p class="menudebajo">OFICIAL</p>
+        <p class="menudebajo">DESCRIPCION</p>
+        <p class="menudebajo">ACCIONES</p>
+      </div>
+
+    </div>
+
+</div>
+
+<div *ngIf="!limpiarlo">
+  <app-articulos></app-articulos>
+</div>

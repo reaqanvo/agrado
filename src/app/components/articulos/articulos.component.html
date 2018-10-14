@@ -1,0 +1,114 @@
+<div class="grid-container" *ngIf="!buscalo">
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="limpiar()">LIMPIAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="buscar()">BUSCAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="imprimir()">IMPRIMIR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="modificar()">MODIFICAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="anadir()">AÑADIR</button>
+  </div>
+
+</div>
+<div class="grid-container3" *ngIf="!buscalo">
+  <div class="grid-container2">
+
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">REFERENCIA </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NÚM.PLANO </label>
+      <input type="text" name="referencia" id="referencia">
+
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NÚM.CLIENTE </label>
+      <input type="text" name="referencia" id="referencia">
+
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NOMBRE CLIENTE </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">DESCRIPCION </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">TIPO DE VIDRIO </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">CAPACIDAD </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">UNID.CAJA</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">PESO </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">DESPERDICIO </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <p class="p-grid-item">ORIENTACIÓN TEXTO</p>
+      <select class="select-grid-item">
+        <option></option>
+        <option>HORIZONTAL</option>
+        <option>VERTICAL</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <p class="p-grid-item">REF. MOLDE</p>
+      <select class="select-grid-item">
+        <option></option>
+        <option>1</option>
+        <option>10</option>
+        <option>11</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">PALETIZADO </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">EMBALAJE </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">TEXTO SERIGRAFIA </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">COLOR SERIGRAFIA </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+<div *ngIf="buscalo">
+  <app-articulos-side-bar2></app-articulos-side-bar2>
+</div>
