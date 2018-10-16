@@ -1,0 +1,149 @@
+<div class="grid-container" >
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="limpiar()">LIMPIAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="buscar()">BUSCAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" disabled (click)="imprimir()">BORRAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="modificar()">MODIFICAR</button>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="modificar()">DUPLICAR</button>
+  </div>
+  <div class="grid-itemM">
+    <p  class="gridletter" (click)="modificar()">MÁQUINA PROVISIONAL:</p>
+  </div>
+  <div class="grid-itemM">
+      <select class="gridSelect">
+          <option></option>
+          <option>Máquina A01</option>
+          <option>Máquina A02</option>
+          <option>Máquina A03</option>
+          <option>Máquina A04</option>
+          <option>Máquina A05</option>
+        </select>
+
+    <!-- <input type="text" class="gridInput" (click)="modificar()"> -->
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="anadir()">AÑADIR</button>
+  </div>
+  <!-- <div class="menuClientes2"> -->
+  <div class="grid-itemM">
+      <select class="gridSelect">
+          <option></option>
+          <option>Imprimir Listado ordenes Pendientes</option>
+        </select>
+  </div>
+  <div class="grid-itemM">
+    <button type="button" class="gridButton" (click)="anadir()">IMPRIMIR</button>
+  <!-- </div> -->
+</div>
+
+</div>
+<div class="grid-container3" *ngIf="!buscalo">
+  <div class="grid-container2">
+
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NÚM.ÓRDEN </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NÚM.PED.CLI.</label>
+      <input type="text" name="referencia" id="referencia">
+
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NÚM.CLI. </label>
+      <input type="text" name="referencia" id="referencia">
+
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" alt="">NOMBRE CLIENTE </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">FECHA ALTA </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">ESTADO </label>
+      <select class="select-grid-item">
+          <option></option>
+          <option>HORIZONTAL</option>
+          <option>VERTICAL</option>
+        </select>
+    </div>
+    <div class="grid-item">
+      <label for="referencia">CONFIRMACIÓN EMAIL </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <button type="button" name="referencia" id="referencia"> </button>
+    </div>
+    <div class="grid-item">
+      <label for="referencia">REFERENCIA </label>
+      <select class="select-grid-item">
+          <option></option>
+          <option>HORIZONTAL</option>
+          <option>VERTICAL</option>
+        </select>
+    </div>
+    <div class="grid-item">
+      <label for="referencia">TIPO VIDRIO </label>
+      <p class="p-grid-item"></p>
+    </div>
+    <div class="grid-item">
+        <label for="referencia">TEXTO SERIGRAFÍA </label>
+      <p class="p-grid-item"></p>
+    </div>
+    <div class="grid-item">
+      <p class="p-grid-item">UNID.CAJA</p>
+    </div>
+    <div class="grid-item">
+      <p class="p-grid-item">REF. MOLDE</p>
+      <select class="select-grid-item">
+        <option></option>
+        <option>1</option>
+        <option>10</option>
+        <option>11</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">PALETIZADO </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">EMBALAJE </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">TEXTO SERIGRAFIA </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+
+    </div>
+    <div class="grid-item">
+      <div class="grid-item">
+        <label for="referencia">COLOR SERIGRAFIA </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+<div *ngIf="buscalo">
+  <app-articulos-side-bar2></app-articulos-side-bar2>
+</div>

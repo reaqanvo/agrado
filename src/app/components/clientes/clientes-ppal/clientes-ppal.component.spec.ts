@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuDropdownComponent } from './menu-dropdown.component';
+import { ClientesPpalComponent } from './clientes-ppal.component';
 
-describe('MenuDropdownComponent', () => {
-  let component: MenuDropdownComponent;
-  let fixture: ComponentFixture<MenuDropdownComponent>;
+describe('ClientesPpalComponent', () => {
+  let component: ClientesPpalComponent;
+  let fixture: ComponentFixture<ClientesPpalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MenuDropdownComponent ]
+      declarations: [ ClientesPpalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MenuDropdownComponent);
+    fixture = TestBed.createComponent(ClientesPpalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

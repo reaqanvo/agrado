@@ -1,0 +1,32 @@
+<nav class="nav-container1">
+    <div class="borderMenuCol">
+      <a class="nav-link" style="text-decoration: none" href="#">Usuario:</a>
+    </div>
+    <div class="borderMenuCol">
+      <div class="nav-articulo">
+        <a class="nav-link1" style="text-decoration: none" href="#">CLIENTES</a>
+        <a class="nav-link2" href="#" style="text-decoration:  underline">mensajes</a>
+
+        <ul>
+          <li class="dropdown">
+            <a class="nav-link3 dropbtn" href="javascript:void(0)" style="text-decoration:  underline"><i class="fas fa-align-justify fa-lg"></i></a>
+
+            <!-- <a href="javascript:void(0)" class="dropbtn">Dropdown</a> -->
+            <div class="dropdown-content">
+              <p class="letraNingunPdf">Ningún PDF</p>
+              <span *ngFor="let item of menuAzul">
+                <a href="www.skdasjkda66sdbkjad.com" class="letraMenuAzul">{{ item }}</a>
+              </span>
+              <span id="acceso"> ACCESO &nbsp; <a href="#"  class="letraMenuAzul">WWW.AGRADO.ES</a></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="borderMenuCol">
+      <a class="nav-link" href="#" style="text-decoration:  underline">Menú principal</a>
+    </div>
+    <div class="borderMenuCol">
+      <a class="nav-link " href="#" style="text-decoration:  underline">salir</a>
+    </div>
+  </nav>

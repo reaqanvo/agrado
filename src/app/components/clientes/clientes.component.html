@@ -1,0 +1,141 @@
+<div class="menusClientes">
+  <div class="grid-container" *ngIf="!buscalo">
+    <div class="grid-itemM">
+      <button type="button" class="gridButton" (click)="limpiar()">LIMPIAR</button>
+    </div>
+    <div class="grid-itemM">
+      <button type="button" class="gridButton" (click)="buscar()">BUSCAR</button>
+    </div>
+    <div class="grid-itemM">
+      <button type="button" class="gridButton" (click)="imprimir()">BORRAR</button>
+    </div>
+    <div class="grid-itemM">
+      <button type="button" class="gridButton" (click)="modificar()">MODIFICAR</button>
+    </div>
+    <div class="grid-itemM">
+      <button type="button" class="gridButton" (click)="anadir()">AÑADIR</button>
+    </div>
+    <div class="grid-itemM">
+      <button type="button" class="gridButton" (click)="anadir()">CARTEL</button>
+    </div>
+        <div class="items-art-sidebar">
+          <button type="button" class="  buttonIncrDecres">|>></button> <!-- </div> -->
+              <button type="button" class="  buttonIncrDecres">-10</button>
+
+              <button type="button" class="  buttonIncrDecres">-1</button>
+
+              <button type="button" class="  buttonIncrDecres">0/0</button>
+
+              <button type="button" class="  buttonIncrDecres">+1</button>
+
+              <button type="button" class="  buttonIncrDecres">+10</button>
+
+              <button type="button" class="  buttonIncrDecres">>>|</button>
+        </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="grid-container3" *ngIf="!buscalo"> -->
+  <div class="grid-container2">
+
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">CÓD.CLIENTE	 </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NOMBRE </label>
+      <input type="text" name="referencia" id="referencia">
+
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa"  alt="">DIRECCION</label>
+      <input type="text" name="referencia" id="referencia">
+
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa"  alt="">LOCALIDAD</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">PROVINCIA </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+        <p class="p-grid-item">PAÍS</p>
+      <select class="select-grid-item">
+          <option></option>
+          <option>ESPAÑA</option>
+          <option>COLOMBIA</option>
+          <option>PERU</option>
+        </select>
+
+    </div>
+    <div class="grid-item">
+        <p class="p-grid-item">RANGO</p>
+        <select class="select-grid-item">
+          <option></option>
+          <option>1- My Restrictivo</option>
+          <option>2- Restrictivo  </option>
+          <option>3- Permisivo</option>
+          <option>4- Muy Permisivo</option>
+        </select>
+    </div>
+    <div class="grid-item">
+      <label for="referencia">CÓD.POSTAL</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">TELÉFONO </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">FAX </label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+        <label for="referencia">EMAIL </label>
+        <input type="text" name="referencia" id="referencia">
+      </div>
+     <div class="grid-item">
+        <label for="referencia">PERSONA CONTACTO </label>
+      <input type="text" name="referencia" id="referencia">
+
+    </div>
+  </div>
+<!-- </div> -->
+<div class="containerMenuInf">
+  <div class="menuInferiorClientes">
+    <p class="cardMorado">CONTROL CALIDAD: LISTA DE DEFECTOS PARA AMPOLLAS</p>
+  </div>
+
+  <div class="menuInferiorClientes">
+    <p class="cardMorado">CONTROL CALIDAD: LISTA DE DEFECTOS PARA VIALES</p>
+  </div>
+
+  <div class="menuInferiorClientes">
+    <button class="buttonMenuInf" type="button">VER LISTA</button>
+  </div>
+
+  <div class="menuInferiorClientes">
+    <button class="buttonMenuInf" type="button">VER LISTA</button>
+  </div>
+
+  <div class="menuInferiorClientes">
+    <p class="cardMorado">¿ESTE CLIENTE DEBE REALIZAR CONTROLES DE ANÁLISIS?</p>
+  </div>
+
+  <div class="menuInferiorClientes">
+    <p class="cardMorado">¿A ESTE CLIENTE SE LE ENVÍAN MUESTRAS DE CONTROL?</p>
+  </div>
+
+  <div class="menuInferiorClientes">
+    <input class="checkBoxmenu"type="checkbox" name="check1">
+  </div>
+
+  <div class="menuInferiorClientes">
+    <input class="checkBoxmenu" type="checkbox" name="check2">
+  </div>
+
+</div>
