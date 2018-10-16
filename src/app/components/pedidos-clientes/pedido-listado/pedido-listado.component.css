@@ -1,0 +1,84 @@
+.contenedorListadoPedido {
+  border: solid black 1px;
+  margin: 0 .4em;
+}
+.contenedorMenuTop {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: (1, .2em);
+  height: .5em;;
+}
+.contenedorMenuTop .listadoLotes:nth-child(1) {
+  grid-column: 1/8;
+  background-color: #29306b;
+  /* height: 1.8em; */
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.contenedorMenuTop .listadoLotes:nth-child(2) {
+  grid-column: 8/9;
+  text-align: right;
+  padding-right: .5em;
+  background-color: #440044;
+  color: white;
+  padding-top: .1em;
+
+}
+.contenedorMenuTop .listadoLotes:nth-child(3) {
+  grid-column: 9/11;
+  background-color: #440044;
+  padding-top: .1em;
+  padding-right:.5em;
+}
+.selectListadoClientes {
+  width: 100%;
+}
+.listadoLotes  {
+  height: 1.8em;
+}
+
+.table {
+  margin-top: 1.5em;
+}
+.tableHead th {
+  background-color: #440044;
+  color:white;
+}
+.tableHead .col {
+  font-weight: 100;
+}
+tr:nth-child(odd) {
+  background-color: #d7d7d7;
+}
+tr:nth-child(even) {
+  background-color: #efefef;
+}
+
+.pagination a{
+  text-align: center;
+  /* background-color: #fff; */
+  margin-top: .5em;
+  margin: .2em;
+  text-decoration: underline;
+  color: #000000;
+
+
+  }
+  .container-pagination{
+    padding-left: 35em;
+    height: 2.5em;
+    /* border: solid black 1px; */
+    margin: 1em 0 .1em .4em;
+   }
+
+   .pagination a.active {
+    background-color: rgb(163, 164, 165);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .pagination a:hover:not(.active) {
+    background-color: rgb(159, 199, 233);
+    border-radius: 5px;
+  }

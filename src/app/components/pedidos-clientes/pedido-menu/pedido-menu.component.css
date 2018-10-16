@@ -1,10 +1,11 @@
 .nav-container1 {
   display: flex;
-  grid-template-columns: repeat(10, auto);
+  grid-template-columns: repeat(10, 1fr);
   border: solid grey 1px;
-  width: 100%;
-  margin-left: .8em;
+  width: 99%;
+  /* margin-left: .8em; */
   background-color: #6c3854;
+  margin: 0 1em 0 .5em;
 }
 .nav-container1 .borderMenuCol:nth-child(n) {
   border: solid rgb(255, 255, 255) 1px;

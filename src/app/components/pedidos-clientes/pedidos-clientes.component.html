@@ -1,4 +1,4 @@
-<div class="grid-container" >
+<div class="grid-container">
   <div class="grid-itemM">
     <button type="button" class="gridButton" (click)="limpiar()">LIMPIAR</button>
   </div>
@@ -15,17 +15,17 @@
     <button type="button" class="gridButton" (click)="modificar()">DUPLICAR</button>
   </div>
   <div class="grid-itemM">
-    <p  class="gridletter" (click)="modificar()">MÁQUINA PROVISIONAL:</p>
+    <p class="gridletter" (click)="modificar()">MÁQUINA PROVISIONAL:</p>
   </div>
   <div class="grid-itemM">
-      <select class="gridSelect">
-          <option></option>
-          <option>Máquina A01</option>
-          <option>Máquina A02</option>
-          <option>Máquina A03</option>
-          <option>Máquina A04</option>
-          <option>Máquina A05</option>
-        </select>
+    <select class="gridSelect">
+      <option></option>
+      <option>Máquina A01</option>
+      <option>Máquina A02</option>
+      <option>Máquina A03</option>
+      <option>Máquina A04</option>
+      <option>Máquina A05</option>
+    </select>
 
     <!-- <input type="text" class="gridInput" (click)="modificar()"> -->
   </div>
@@ -34,18 +34,18 @@
   </div>
   <!-- <div class="menuClientes2"> -->
   <div class="grid-itemM">
-      <select class="gridSelect">
-          <option></option>
-          <option>Imprimir Listado ordenes Pendientes</option>
-        </select>
+    <select class="gridSelect">
+      <option></option>
+      <option>Imprimir Listado ordenes Pendientes</option>
+    </select>
   </div>
   <div class="grid-itemM">
     <button type="button" class="gridButton" (click)="anadir()">IMPRIMIR</button>
-  <!-- </div> -->
-</div>
+    <!-- </div> -->
+  </div>
 
 </div>
-<div class="grid-container3" *ngIf="!buscalo">
+<div class="grid-container3">
   <div class="grid-container2">
 
     <div class="grid-item">
@@ -63,7 +63,7 @@
 
     </div>
     <div class="grid-item">
-      <label for="referencia"><img class="lupa" alt="">NOMBRE CLIENTE </label>
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">NOMBRE CLIENTE </label>
       <input type="text" name="referencia" id="referencia">
     </div>
     <div class="grid-item">
@@ -73,77 +73,120 @@
     <div class="grid-item">
       <label for="referencia">ESTADO </label>
       <select class="select-grid-item">
-          <option></option>
-          <option>HORIZONTAL</option>
-          <option>VERTICAL</option>
-        </select>
-    </div>
-    <div class="grid-item">
-      <label for="referencia">CONFIRMACIÓN EMAIL </label>
-      <input type="text" name="referencia" id="referencia">
-    </div>
-    <div class="grid-item">
-      <button type="button" name="referencia" id="referencia"> </button>
-    </div>
-    <div class="grid-item">
-      <label for="referencia">REFERENCIA </label>
-      <select class="select-grid-item">
-          <option></option>
-          <option>HORIZONTAL</option>
-          <option>VERTICAL</option>
-        </select>
-    </div>
-    <div class="grid-item">
-      <label for="referencia">TIPO VIDRIO </label>
-      <p class="p-grid-item"></p>
-    </div>
-    <div class="grid-item">
-        <label for="referencia">TEXTO SERIGRAFÍA </label>
-      <p class="p-grid-item"></p>
-    </div>
-    <div class="grid-item">
-      <p class="p-grid-item">UNID.CAJA</p>
-    </div>
-    <div class="grid-item">
-      <p class="p-grid-item">REF. MOLDE</p>
-      <select class="select-grid-item">
         <option></option>
-        <option>1</option>
-        <option>10</option>
-        <option>11</option>
+        <option>HORIZONTAL</option>
+        <option>VERTICAL</option>
       </select>
     </div>
     <div class="grid-item">
+      <label for="referencia">CONFIRMACIÓN EMAIL </label>
+      <input type="text" name="referencia" DISABLED id="referencia">
+    </div>
+
+    <div class="grid-item">
+      <button type="button" class="gridButton" (click)="anadir()">ENVIAR EMAIL</button>
+    </div>
+
+    <div class="grid-item">
+      <label for="referencia">REFERENCIA </label>
+      <select class="select-grid-item">
+        <option></option>
+        <option>HORIZONTAL</option>
+        <option>VERTICAL</option>
+      </select>
+    </div>
+    <div class="grid-item">
+      <label for="referencia">TIPO VIDRIO </label>
+      <input type="text" name="referencia" id="referencia" disabled>
+      <!-- <p class="p-grid-item"></p> -->
+    </div>
+    <div class="grid-item">
+      <label for="referencia">DESCRIPCION </label>
+      <input type="text" name="referencia" id="referencia" disabled>
+      <!-- <p class="p-grid-item"></p> -->
+    </div>
+
+    <div class="grid-item">
+      <label for="referencia">TEXTO SERIGRAFÍA </label>
+      <input type="text" name="referencia" id="referencia" disabled>
+      <!-- <p class="p-grid-item"></p> -->
+    </div>
+    <div class="grid-item">
+      <label for="referencia">UNID.CAJA </label>
+      <input type="text" name="referencia" id="referencia" disabled>
+      <!-- <p class="p-grid-item">UNID.CAJA</p> -->
+    </div>
+    <div class="grid-item">
+      <!-- <p class="p-grid-item">CAPACIDAD</p> -->
+      <label for="referencia">CAPACIDAD </label>
+      <input type="text" name="referencia" id="referencia" disabled>
+      <!-- <p class="p-grid-item">UNID.CAJA</p> -->
+    </div>
+    <div class="grid-item">
       <div class="grid-item">
-        <label for="referencia">PALETIZADO </label>
-        <input type="text" name="referencia" id="referencia">
+        <label for="referencia">PESO </label>
+        <input type="text" name="referencia" id="referencia" disabled>
       </div>
     </div>
     <div class="grid-item">
       <div class="grid-item">
-        <label for="referencia">EMBALAJE </label>
-        <input type="text" name="referencia" id="referencia">
+        <label for="referencia">DESP. </label>
+        <input type="text" name="referencia" id="referencia" disabled>
       </div>
 
     </div>
     <div class="grid-item">
       <div class="grid-item">
-        <label for="referencia">TEXTO SERIGRAFIA </label>
-        <input type="text" name="referencia" id="referencia">
+        <label for="referencia">MED.Ø1</label>
+        <input type="text" name="referencia" id="referencia" disabled>
       </div>
 
     </div>
     <div class="grid-item">
-      <div class="grid-item">
-        <label for="referencia">COLOR SERIGRAFIA </label>
-        <input type="text" name="referencia" id="referencia">
-      </div>
-
+      <label for="referencia">MED.C</label>
+      <input type="text" name="referencia" id="referencia" disabled>
     </div>
+    <div class="grid-item">
+      <label for="referencia">CANTIDAD</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia"> NÚM.LOTES</label>
+      <select class="select-grid-item">
+        <option></option>
+        <option>HORIZONTAL</option>
+        <option>VERTICAL</option>
+      </select>
 
+      <!-- <input type="text" name="referencia" id="referencia"> -->
+    </div>
+    <div class="grid-item">
+      <label for="referencia">UNID.POR LOTE</label>
+      <input type="text" name="referencia" id="referencia" disabled>
+    </div>
+    <div class="grid-item">
+      <label for="referencia">VIDRIO NECESARIO</label>
+      <input type="text" name="referencia" id="referencia" disabled>
+    </div>
+    <div class="grid-item">
+      <label for="referencia"><img class="lupa" src="../../../assets/lupa.gif" alt="">LOTE DEL CLIENTE</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">NÚM.FABR. CLIENTE</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia">CADUCIDAD</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="referencia"> FECHA ENTR.</label>
+      <input type="text" name="referencia" id="referencia">
+    </div>
+    <div class="grid-item">
+      <label for="textArea">OBSERVACIONES</label>
+      <textarea type="text" class="textArea" name="textArea" id="textArea"></textarea>
+    </div>
   </div>
-  </div>
-
-<div *ngIf="buscalo">
-  <app-articulos-side-bar2></app-articulos-side-bar2>
 </div>
